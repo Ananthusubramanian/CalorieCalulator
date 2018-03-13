@@ -44,7 +44,7 @@ public class Enterdata extends AppCompatActivity {
                         t=  Integer.parseInt(sharedPreferences.getString("number", ""));
                     }
                     int hour=Integer.parseInt(hours.getText().toString());
-                    int ag =Integer.parseInt(gender.getText().toString());
+                    int ag =Integer.parseInt(age.getText().toString());
                     int wt= Integer.parseInt(weight.getText().toString());
                     int rate = Integer.parseInt(heartrate.getText().toString());
                     double cal=(((0.02017*ag)-(rate*0.05741)+(ag*0.4472)-20.4022)*(hour*60))/4.184;

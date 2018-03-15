@@ -43,12 +43,13 @@ public class Enterdata extends AppCompatActivity {
                     }else{
                         t=  Integer.parseInt(sharedPreferences.getString("number", ""));
                     }
-                    int hour=Integer.parseInt(hours.getText().toString());
-                    int ag =Integer.parseInt(age.getText().toString());
-                    int wt= Integer.parseInt(weight.getText().toString());
-                    int rate = Integer.parseInt(heartrate.getText().toString());
-                    double cal=(((0.02017*ag)-(rate*0.05741)+(ag*0.4472)-20.4022)*(hour*60))/4.184;
-                    if(hour>0&&ag>0&&wt>0&&!name.getText().toString().isEmpty()&&!gender.getText().toString().isEmpty()) {
+
+                    if(!heartrate.getText().toString().isEmpty()&&!hours.getText().toString().isEmpty()&&!age.getText().toString().isEmpty()&&!weight.getText().toString().isEmpty()&&!name.getText().toString().isEmpty()&&!gender.getText().toString().isEmpty()) {
+                        int hour=Integer.parseInt(hours.getText().toString());
+                        int ag =Integer.parseInt(age.getText().toString());
+                        int wt= Integer.parseInt(weight.getText().toString());
+                        int rate = Integer.parseInt(heartrate.getText().toString());
+                        double cal=(((0.02017*ag)-(rate*0.05741)+(ag*0.4472)-20.4022)*(hour*60))/4.184;
                         User u = new User(t, name.getText().toString(), age.getText().toString().trim(), gender.getText().toString(), weight.toString(), hours.toString(), cal);
                         db.add(u);
                         Toast.makeText(getApplicationContext(), " ID :: " + String.valueOf(t) + " (Remember this id for further use.)",

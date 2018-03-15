@@ -23,6 +23,8 @@ public class Enterdata extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.enterdata);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Enter Data");
         final SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("Id", Context.MODE_PRIVATE);
         final DatabaseHandler db = new DatabaseHandler(this);
         name= (TextInputEditText)findViewById(R.id.name);

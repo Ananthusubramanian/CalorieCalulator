@@ -23,7 +23,6 @@ private Button submit;
         list.add("Enter patient detail");
         list.add("View patient detail");
         list.add("Calorie calculation");
-        list.add("Details about software");
         ArrayAdapter<String> aa = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_spinner_item,list);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(aa);

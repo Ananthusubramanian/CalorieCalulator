@@ -21,6 +21,8 @@ private Button submit;
         setContentView(R.layout.record);
         final DatabaseHandler db = new DatabaseHandler(this);
         id = findViewById(R.id.number);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Record");
         submit = findViewById(R.id.b_submit1);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

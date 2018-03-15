@@ -11,7 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter the Number "
-            android:id="@+id/music_country"/>
+            android:id="@+id/number"/>
     </android.support.design.widget.TextInputLayout>
 
     <Button

@@ -1,6 +1,3 @@
- CalorieCalulator
-This App calculates calorie needed for each person.
+# CalorieCalulator:
 
-
-
-
+This App calculates the amount of calorie required for a person.
